@@ -5,4 +5,16 @@
   <h1><%= title %></h1>
   <p>Welcome to <%= title %></p>
 
+  <li class="nav-item">
+  <% if (title == "Home Page") { %>
+    <%- include('partials/pageContent/home.ejs') %>
+  <% } else if (title == "My Projects") { %>
+    <%- include('partials/pageContent/projects.ejs') %>
+  <% } else if (title == "Contact Information") { %>
+    <%- include('partials/pageContent/contact.ejs') %>
+  <% } else if (title == "About Me") { %>
+    <%- include('partials/pageContent/about.ejs') %>
+  <% } else { %>
+    console.log("unset title")
+  <% } %>
 <%- include('partials/bottom_nav.ejs') %>

@@ -1,0 +1,26 @@
+<div id="formHolder">
+    <form id="contactForm" action="mailto:william.noble1@ontariotechu.net?subject=Website" method="post" enctype="text/plain" name="form">
+        <p>
+            <label class="inputLabel" for="name">Name : </label>
+            <br>
+            <input class="inputBox" id="name" type="text" name="name" placeholder="Full Name" size="30" required>
+        </p>
+        <p>
+            <label class="inputLabel" for="email">Email : </label>
+            <br>
+            <input class="inputBox" id="email" type="email" name="email" placeholder="example@email.com" size="30" required>
+        </p>
+        <p>
+            <label class="inputLabel" for="message">Message : </label>
+            <br>
+            <textarea class="inputBox" id="message" name="message" cols="29" rows="8"></textarea>
+        </p>
+        <p id="buttonHolder">
+            <input id="formSubmit" type="submit" value="Submit">
+            <!-- non-breaking space is &nbsp -->
+            &nbsp;
+            <input id="formReset" type="reset" value="Reset">
+        </p>
+
+    </form>
+</div>
