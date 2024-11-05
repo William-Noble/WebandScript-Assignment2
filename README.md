@@ -1,4 +1,4 @@
-# WebandScript-WebandScript-Assignment2
+# WebandScript-Assignment2
 W3Schools is my best friend.
 
 Sources:
