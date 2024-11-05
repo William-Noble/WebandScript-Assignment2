@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Assignment 1 - Noble</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="full.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
+    <!-- <link href="fluid.css" rel="stylesheet" type="text/css"> -->
+    <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:959px)">
+    <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">    
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <nav class="mainNav">
+                <a href="about.html"><img class="Profile_Icon" src="Profile_Icon.png" alt="Human silhouette icon"></a>
+                &nbsp;
+                <a class="NavLink" href="about.html">About Me</a>
+                &nbsp;
+                <a class="NavLink" href="index.html">Home</a>
+                &nbsp;
+                <a class="NavLink" href="projects.html">Projects</a>
+                &nbsp;
+                <a class="NavLink" href="contact.html">Contact</a>
+                <a class="NavTop" href="#wrapper">Back To Top</a>
+            </nav>
+            
+        </header>
+        <main>
+            <div class="titleHolder">
+                <!-- img below was taken from pixabay.com and is royalty free -->
+                <img class="mountains" src="projectsMountain.jpg" alt="mountain">
+                <h1 class="pageTitle">My Projects</h1>
+            </div>
+            <section id="projPageInfo">
+                <h3>
+                    This page contains a list with links and brief overviews of all projects I have created.
+                </h3>
+            </section>
+            <section id="projlist">
+                <div>
+                    <div class="projBox">
+                        <a class="projLink" href="#proj1">
+                            <h3 class="projBoxTitle">Word Guess</h3>
+                            <p class="projBoxDesc">
+                                Word guess is a python program that generates a random word and has a user guess letters until they get the correct word or run out of guesses.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="projBox">
+                        <a class="projLink" href="#proj2">
+                            <h3 class="projBoxTitle">Basic Calculator</h3>
+                            <p class="projBoxDesc">The basic calculator could take 2 numerical inputs and an operator and return the result of the operation.</p>
+                        </a>
+                    </div>
+                    <div class="projBox">
+                        <a class="projLink" href="#proj3">
+                            <h3 class="projBoxTitle">Math & Guessing Games</h3>
+                            <p class="projBoxDesc">This project was a collection of several simple python programs.</p>
+                        </a>
+                    </div>
+                    <div class="projBox">
+                        <a class="projLink" href="#proj4">
+                            <h3 class="projBoxTitle">Averages</h3>
+                            <p class="projBoxDesc">Averages was a program that calculated the average grade given a list of students and there test scores.</p>
+                        </a>
+                    </div>
+                    <div class="projBox">
+                        <a class="projLink" href="#proj5">
+                            <h3 class="projBoxTitle">Checking Lists and Strings</h3>
+                            <p class="projBoxDesc">Here a user can input a list of string and have either the count of vowels and consonants or a detailed summary of how often each word repeats.</p>
+                        </a>
+                    </div>
+                    <div class="projBox">
+                        <a class="projLink" href="#proj6">
+                            <h3 class="projBoxTitle">Task Manager</h3>
+                            <p class="projBoxDesc">This program creates and maintains a customizable to-do list for a user.</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <br class="hardBreak">
+            <div id="projInfo">
+                <!-- <p id="projInfoDesc">This section contains a list of every project.</p> -->
+                <hr class="sectionDivider">
+                <article id="proj1" class="ProjInfoContainer">
+                    <h2 class="sectionTitle">Word Guess</h2>
+                    <p class="sectionContent">
+                        Word Guess is a hangman style game created using python.
+                        The game required users to enter a few criteria before it could start, specifically the word length and the number of guesses available to the user.
+                        Step one was for a random word matching the word length to be selected from the local word database (an array with a bunch of words in it).
+                        The game would then allow the user to guess letters 1 at a time revealing the location of the letter in the word on every correct guess.
+                        A list of every guess is provided along with a counter of the remaining number of guesses the user has available.
+                        Upon guessing the entire word or running out of guesses the game either returns a win or a fail and prompts the user to replay.
+                    </p>
+                </article>
+                <hr class="sectionDivider">
+                <article id="proj2" class="ProjInfoContainer">
+                    <h2 class="sectionTitle">Basic Calculator</h2>
+                    <p class="sectionContent">
+                        The Basic Calculator was not very complicated, it took only 3 inputs to make mathematical calculations.
+                        This project was designed early into my learning of python and held several inefficiencies, namely, it lacked error handling in most cases and used a long if/elif chain to determine the input.
+                        Calculators as basic as this will never be used in a situation that requires a significant amount of computing power therefore, in this case, the buggy CPU intensive code is unlikely to have any measurable impact.
+                    </p>
+                </article>
+                <hr class="sectionDivider">
+                <article id="proj3" class="ProjInfoContainer">
+                    <h2 class="sectionTitle">Math & Games</h2>
+                    <p class="sectionContent">
+                        For this project I was given a list of simple python programming assignments to program.
+                        <br><br>
+                        The first assignment was to create a function that determined if a number was a prime number.
+                        using the basic approach I created a for loop that iterated through every number from 2 to n/2 and used the modulus (%) operator to find if n was divisible.
+                        <br><br>
+                        Secondly, find the sum of all positive numbers from 0 to n.
+                        This was a pretty simple task for a for loop but to maximize efficiency I employed the sum=n(n+1)/2 formula developed by Guass.
+                        <br><br>
+                        The third assignment was to create a game where the user had to guess a number within a range.
+                        For this I had to check whether the user input was greater than, less than or equal to the correct number.
+                        From here I could provide feedback that the user could use to make their next guess.
+                        <br><br>
+                        Finally, The last game simply had users roll a dice and whichever user rolled a 6 first won.
+                        This was a very simple task only requiring a while loop to keep play going until a 6 was rolled.
+                        This was also a very boring game.
+                    </p>
+                </article>
+                <hr class="sectionDivider">
+                <article id="proj4" class="ProjInfoContainer">
+                    <h2 class="sectionTitle">Averages</h2>
+                    <p class="sectionContent">
+                        In this program I had a basic UI where the user could input the names of students and how well they did on a test.
+                        When the user enters the last student score the program returns information on the class average.
+                    </p>
+                </article>
+                <hr class="sectionDivider">
+                <article id="proj5" class="ProjInfoContainer">
+                    <h2 class="sectionTitle">Checking Lists and Strings</h2>
+                    <p class="sectionContent">
+                        Here a user can input a string and the program will return the number of consonants and vowels or the user can input a list of words and have a detailed breakdown of how often each word repeats in the list.
+                    </p>
+                </article>
+                <hr class="sectionDivider">
+                <article id="proj6" class="ProjInfoContainer">
+                    <h2 class="sectionTitle">Task Manager</h2>
+                    <p class="sectionContent">
+                        When users open this program they are prompted to select one of the following options:
+                        <br>
+                        (1) Enter a new item to your to-do List
+                        <br>
+                        (2) Print your to-do list
+                        <br>
+                        (3) Remove an item from your to-do list
+                        <br>
+                        (4) Exit the program
+                        <br>
+                        After the user selects an option the appropriate function is called.
+                        All progress is saved in a 2d array which can be expanded to accommodate any data the user wishes to enter.
+                    </p>
+                </article>
+            </div>
+        </main>
+        
+        <footer>
+            <hr class="sectionDivider">
+            <address>
+                <p>
+                    Don't Contact me at 
+                    <a class="defaultLink" href="mailto:william.noble1@ontariotechu.net">william.noble1@ontariotechu.net</a>
+                    <br><br>
+                    &copy; William Noble 2024
+                </p>
+            </address>
+        </footer>
+    </div>
+</body>
+</html>

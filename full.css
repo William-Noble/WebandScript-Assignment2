@@ -1,0 +1,321 @@
+@charset "UTF-8";
+@media only screen and (min-width : 960px) {
+
+/* main tag formatting */
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: grey;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+p,h1,h2,h3,h4,h5,h6
+{
+    color: white;
+    padding: 5px;
+}
+#wrapper
+{
+    background-color: #0C2B41;
+    width: 100%;
+    width: 960px;
+}
+footer
+{
+    clear: both;
+    background-color: #3C3C3C;
+}
+footer p
+{
+    margin-bottom: 0;
+}
+.hardBreak
+{
+    clear: both;
+}
+/* top navigation bar */
+.mainNav
+{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3C3C3C;
+    display: flex;
+    align-items: center;
+}
+.Profile_Icon
+{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    padding-right: 0px;
+}
+.NavLink
+{
+    padding: 2px;
+    color: white;
+    text-decoration: none;
+}
+.NavTop
+{
+    padding: 2px;
+    color: white;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: 5px;
+}
+/* All page styles */
+.sectionTitle
+{
+    padding: 5px;
+}
+.sectionContent
+{
+    padding: 5px;
+}
+/* Title Section */
+.titleHolder
+{
+    position: relative;
+    text-align: center;
+    height: fit-content;
+}
+.pageTitle
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-text-stroke: 3px black; /* Narcélio Filho stack overflow (check README for citation) */
+    font-size: 50px;
+    font-weight: 900;
+}
+.mountains
+{
+    width: 100%;
+}
+.defaultLink
+{
+    color: white;
+}
+/* about page */
+/* about right side content */
+#aboutAside
+{
+    position: sticky;
+    left: 100%;
+    float: right;
+    top: 55px;
+    background-color: black;
+    border-radius: 5px;
+    width: 30%;
+}
+#aboutAsideFigure
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: blue;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+#selfPhoto
+{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+}
+#aboutAsideFigureCaption
+{
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+}
+#aboutNav
+{
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+.asideNav
+{
+    color: white;
+}
+.asideNavList
+{
+    margin-bottom: 5px;
+}
+/* about page content */
+.pageContent
+{
+    width: 70%;
+    /* background-color: yellowgreen; */
+}
+.aboutContentContainer
+{
+    scroll-margin-top: 55px;
+}
+/* #aboutVideoLink
+{
+    background-color: blueviolet;
+} */
+#selfVideoHolder
+{
+    display: flex;
+    justify-content: center;
+}
+#aboutVideo
+{
+    width: 100%;
+    width: 500px;
+}
+#playPauseBtnHolder
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#playPauseBtn
+{
+    background-color: #007d84;
+    color: white;
+    font-weight: 800;
+    height: 50px;
+}
+#selfPortraitHolder
+{
+    width: 100%;
+    background-color: #3C3C3C;
+    display: flex;
+    justify-content: center;
+}
+/* #selfPortrait
+{
+    
+} */
+#selfPortrait:hover
+{
+    /* I also regret this */
+    animation: rotator 5s infinite linear;
+}
+@keyframes rotator
+{
+    0%
+    {
+        transform: scale(1.5) rotate(0deg);
+    }
+    50%
+    {
+        transform: scale(1.5) rotate(180deg);
+    }
+    100%
+    {
+        transform: scale(1.5) rotate(360deg);
+    }
+}
+#aboutGoalsList
+{
+    color: white;
+}
+/* project page */
+.projBox
+{
+    float: left;
+    margin: 5px;
+    /* burlywood is not bad with black text */
+    /* background-color: burlywood; */
+    background-color: #FA7E00;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.projLink
+{
+    /* makes entire project box clickable */
+    /* source: User "Mario." stack overflow. check README for citation */
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+.ProjInfoContainer
+{
+    scroll-margin-top: 55px;
+}
+.projBoxTitle
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    color: black;
+}
+.projBoxDesc
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    color: black;
+}
+#projInfo
+{
+    padding: 5px;
+}
+/* Contact Page */
+#formHolder
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contactForm
+{
+    background-color: #AFAFAF;
+    padding: 2%;
+    border-radius: 10px;
+}
+.inputLabel
+{
+    font-size: 20px;
+    color: black;
+}
+.inputBox
+{
+    border-radius: 5px;
+}
+#buttonHolder
+{
+    display: flex;
+    justify-content: center;
+}
+#formSubmit
+{
+    /* Linear Gradient */
+    font-size: 20px;
+    border-radius: 10%;
+    background: green;
+    background: -moz-linear-gradient(to right ,#009900, #00CC00);
+    background: -webkit-linear-gradient(to right ,#009900, #00CC00);
+    background: -o-linear-gradient(to right ,#009900, #00CC00);
+    background: linear-gradient(to right ,#009900, #00CC00);
+}
+#formReset
+{
+    /* Angular Gradient */
+    font-size: 20px;
+    border-radius: 10%;
+    background: red;
+    background: -moz-linear-gradient(45deg,#990000, #FF0000);
+    background: -webkit-linear-gradient(45deg,#990000, #FF0000);
+    background: -o-linear-gradient(45deg,#990000, #FF0000);
+    background: linear-gradient(45deg,#990000, #FF0000);
+}
+
+}

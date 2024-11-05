@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Assignment 1 - Noble</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="full.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
+    <!-- <link href="fluid.css" rel="stylesheet" type="text/css"> -->
+    <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:959px)">
+    <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">    
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <nav class="mainNav">
+                <a href="about.html"><img class="Profile_Icon" src="Profile_Icon.png" alt="Human silhouette icon"></a>
+                &nbsp;
+                <a class="NavLink" href="about.html">About Me</a>
+                &nbsp;
+                <a class="NavLink" href="index.html">Home</a>
+                &nbsp;
+                <a class="NavLink" href="projects.html">Projects</a>
+                &nbsp;
+                <a class="NavLink" href="contact.html">Contact</a>
+                <a class="NavTop" href="#wrapper">Back To Top</a>
+            </nav>
+            
+        </header>
+        <main>
+            <div class="titleHolder">
+                <!-- img below was taken from pixabay.com and is royalty free -->
+                <img class="mountains" src="ContactPageMountain.jpg" alt="mountain">
+                <h1 class="pageTitle">Contact Information</h1>
+            </div>
+            <div id="formHolder">
+                <form id="contactForm" action="mailto:william.noble1@ontariotechu.net?subject=Website" method="post" enctype="text/plain" name="form">
+                    <p>
+                        <label class="inputLabel" for="name">Name : </label>
+                        <br>
+                        <input class="inputBox" id="name" type="text" name="name" placeholder="Full Name" size="30" required>
+                    </p>
+                    <p>
+                        <label class="inputLabel" for="email">Email : </label>
+                        <br>
+                        <input class="inputBox" id="email" type="email" name="email" placeholder="example@email.com" size="30" required>
+                    </p>
+                    <p>
+                        <label class="inputLabel" for="message">Message : </label>
+                        <br>
+                        <textarea class="inputBox" id="message" name="message" cols="29" rows="8"></textarea>
+                    </p>
+                    <p id="buttonHolder">
+                        <input id="formSubmit" type="submit" value="Submit">
+                        <!-- non-breaking space is &nbsp -->
+                        &nbsp;
+                        <input id="formReset" type="reset" value="Reset">
+                    </p>
+
+                </form>
+            </div>
+        </main>
+        <footer>
+            <hr class="sectionDivider">
+            <address>
+                <p>
+                    Don't Contact me at 
+                    <a class="defaultLink" href="mailto:william.noble1@ontariotechu.net">william.noble1@ontariotechu.net</a>
+                    <br><br>
+                    &copy; William Noble 2024
+                </p>
+            </address>
+        </footer>
+    </div>
+</body>
+</html>
