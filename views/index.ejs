@@ -1,11 +1,23 @@
 <%- include('partials/header.ejs') %>
 <%- include('partials/scripts.ejs') %>
 <%- include('partials/main_nav.ejs') %>
+<div id="wrapper">
+  <div class="titleHolder">
+      <!-- img below was taken from pixabay.com and is royalty free -->
+      <% if (title == "Home Page") { %>
+        <img class="mountains" src="/Assets/images/HomeMountain.jpg" alt="mountain">
+      <% } else if (title == "My Projects") { %>
+        <img class="mountains" src="/Assets/images/projectsMountain.jpg" alt="mountain">
+      <% } else if (title == "Contact Information") { %>
+        <img class="mountains" src="/Assets/images/ContactPageMountain.jpg" alt="mountain">
+      <% } else if (title == "About Me") { %>
+        <img class="mountains" src="/Assets/images/AboutMeMountain.jpg" alt="mountain">
+      <% } else { %>
+        console.log("unset title")
+      <% } %>
+      <h1 class="pageTitle"><%= title %></h1>
+  </div>
 
-  <h1><%= title %></h1>
-  <p>Welcome to <%= title %></p>
-
-  <li class="nav-item">
   <% if (title == "Home Page") { %>
     <%- include('partials/pageContent/home.ejs') %>
   <% } else if (title == "My Projects") { %>
@@ -17,4 +29,5 @@
   <% } else { %>
     console.log("unset title")
   <% } %>
+</div>
 <%- include('partials/bottom_nav.ejs') %>

@@ -1,8 +1,8 @@
 <aside id="aboutAside">
     <figure id="aboutAsideFigure">
         <picture>
-            <source media="(min-width : 480px)" srcset="Sadie.jpg">
-            <img id="selfPhoto" src="Simon.jpg" alt="Photo of one of the authors pets">
+            <source media="(min-width : 480px)" srcset="/Assets/images/Sadie.jpg">
+            <img id="selfPhoto" src="/Assets/images/Simon.jpg" alt="Photo of one of the authors pets">
         </picture>
         
         <figcaption id="aboutAsideFigureCaption">
@@ -10,18 +10,18 @@
         </figcaption>
     </figure>
     <nav id="aboutNav">
-        <ul style="list-style:none; padding: 0;">
-            <li class="asideNavList">
-                <a class="asideNav" href="#aboutVideoLink">Intro Video</a>
+        <ul class="nav flex-column" style="min-width: 75%;">
+            <li class="nav-item" style="padding: 2px">
+                <a class="btn btn-secondary active" style="color: white; min-width: 100%; padding: 2px;" href="#aboutVideoLink">Intro Video</a>
             </li>
-            <li class="asideNavList">
-                <a class="asideNav" href="#aboutBasicInfo">Basic Info</a>
+            <li class="nav-item" style="padding: 2px">
+                <a class="btn btn-secondary active" style="color: white; min-width: 100%; padding: 2px;" href="#aboutBasicInfo">Basic Info</a>
             </li>
-            <li class="asideNavList">
-                <a class="asideNav" href="#aboutHobbies">My Hobbies</a>
+            <li class="nav-item" style="padding: 2px">
+                <a class="btn btn-secondary active" style="color: white; min-width: 100%; padding: 2px;" href="#aboutHobbies">My Hobbies</a>
             </li>
-            <li class="asideNavList">
-                <a class="asideNav" href="#aboutGoals">My Goals</a>
+            <li class="nav-item" style="padding: 2px">
+                <a class="btn btn-secondary active" style="color: white; min-width: 100%; padding: 2px;" href="#aboutGoals">My Goals</a>
             </li>
         </ul>
     </nav>
@@ -30,10 +30,10 @@
     <article class="aboutContentContainer" id="aboutVideoLink">
         <h2 class="sectionTitle">Introductory Video</h2>
         <div id="selfVideoHolder">
-            <video controls poster="Pluto_on_stairs.PNG" preload="auto" loop muted id="aboutVideo">
+            <video controls poster="/Assets/images/pluto_on_stairs.PNG" preload="auto" loop muted id="aboutVideo">
                 <!-- Every video I tried to record was completely ruined when I tried to convert it to mp4 and ogv formats -->
-                <source src="SelfVideo.mp4" type="video/mp4">
-                <source src="SelfVideo.ogv" type="video/ogg">
+                <source src="/Assets/videos/SelfVideo.mp4" type="video/mp4">
+                <source src="/Assets/videos/SelfVideo.ogv" type="video/ogg">
             </video>
         </div>
         <br>
@@ -66,7 +66,7 @@
         </p>
         <div id="selfPortraitHolder">
             <!-- I worked so hard on this -->
-            <img id="selfPortrait" src="selfPortrait.jpg" alt="Very well drawn image of William Noble">
+            <img id="selfPortrait" src="/Assets/images/selfPortrait.jpg" alt="Very well drawn image of William Noble">
         </div>
             
     </article>
